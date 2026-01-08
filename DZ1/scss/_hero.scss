@@ -1,0 +1,63 @@
+.hero {
+    position: relative;
+    display: flex;
+    padding: 0 32px;
+}
+
+.hero-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 48px;
+    height: 100%;
+}
+
+.hero-links {
+    display: flex;
+    gap: 48px;
+    
+    .hero-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border-radius: $border-radius-md;
+        border: 1.33px solid $color-black;
+        color: $color-black;
+        transition: $transition-default;
+        
+        i {
+            font-size: 32px;
+        }
+        
+        img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+        
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+        }
+    }
+}
+
+.hero-description {
+    max-width: 701px;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-text-secondary;
+}
+
+.hero-image {
+    margin-left: auto;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

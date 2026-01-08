@@ -1,0 +1,20 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 123px;
+}
+
+.about-content {
+    .header {
+        text-align: left;
+    }
+    
+    .about-description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-text-secondary;
+    }
+}

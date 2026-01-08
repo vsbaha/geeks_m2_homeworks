@@ -1,0 +1,41 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+    border-radius: $border-radius-sm;
+    border: 1px solid $color-white;
+    transition: $transition-default;
+    
+    .header-wrapper {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+    
+    .card-header {
+        font-size: 30px;
+    }
+    
+    .card-description {
+        font-size: 18px;
+    }
+    
+    .experience-icon {
+        display: inline;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+    }
+
+    &:hover {
+        background-color: #242424;
+        color: $color-white;
+    }
+}

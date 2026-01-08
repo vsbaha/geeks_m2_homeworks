@@ -1,0 +1,35 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    display: flex;
+    height: 180px;
+    width: 186px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: $border-radius-sm;
+    border: 1px solid $color-black;
+    background-color: $color-white;
+    transition: $transition-default;
+    
+    i {
+        font-size: 48px;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    &:hover {
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
