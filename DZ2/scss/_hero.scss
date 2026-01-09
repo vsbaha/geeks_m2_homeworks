@@ -1,0 +1,87 @@
+.hero {
+    position: relative;
+    display: flex;
+    padding: 0 32px;
+    @media (max-width: 1275px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.hero-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 48px;
+    height: 100%;
+    @media (max-width: 1275px) {
+        position: static;
+        gap: 24px;
+    }   
+    @media (max-width: 725px) {
+        gap: 16px;
+    }
+}
+
+.hero-links {
+    display: flex;
+    gap: 48px;
+    @media (max-width: 1275px) {
+        gap: 24px;
+    }
+    
+    .hero-icon {
+        @include flexCenter;
+        width: 64px;
+        height: 64px;
+        border-radius: $border-radius-md;
+        border: 1.33px solid var(--color-border);
+        color: var(--color-text);
+        transition: $transition-default;
+        @media (max-width: 725px) {
+            width: 48px;
+            height: 48px;
+        }
+        
+        i {
+            font-size: 32px;
+        }
+        
+        img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+        
+        &:hover {
+            background-color: var(--color-card-hover-bg);
+            color: var(--color-card-hover-text);
+        }
+    }
+}
+
+.hero-description {
+    max-width: 701px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    @media (max-width: 1275px) {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    @media (max-width: 725px) {
+        font-size: 16px;
+        max-width: 100%;
+    }
+}
+
+.hero-image {
+    margin-left: auto;
+    
+    img {
+        @include responsiveImage;
+    }
+    @media (max-width: 1275px) {
+        margin-left: 0;
+    }
+}

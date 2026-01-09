@@ -1,0 +1,37 @@
+// тут крч размеры и все такое
+$container-max-width: 1280px;
+$section-spacing: 100px;
+$border-radius-sm: 8px;
+$border-radius-md: 10.67px;
+$border-radius-lg: 20px;
+$transition-default: all 0.3s ease;
+
+// а здесь цвета для светлой темы
+:root {
+    --color-bg: #fff;
+    --color-text: #000;
+    --color-text-secondary: #00000099;
+    --color-border: #000;
+    --color-card-bg: #fff;
+    --color-card-hover-bg: #000;
+    --color-card-hover-text: #fff;
+}
+
+// а здесь для темной
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #191919;
+        --color-text: #fff;
+        --color-text-secondary: #ffffff99;
+        --color-border: #fff;
+        --color-card-bg: #1a1a1a;
+        --color-card-hover-bg: #2a2a2a;
+        --color-card-hover-text: #fff;
+    }
+}
+
+// это на всякий 
+$color-black: #000;
+$color-white: #fff;
+$color-text-secondary: #00000099;
+$color-white-secondary: #FFFFFF99;

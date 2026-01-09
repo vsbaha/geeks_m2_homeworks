@@ -1,0 +1,32 @@
+.contacts {
+    flex-shrink: 1;
+    flex-grow: 2;
+    max-width: 598px;
+    
+    h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    .description {
+        margin: 32px 0;
+        color: $color-text-secondary;
+        line-height: 24px;
+    }
+}
+
+.call-me {
+    display: flex;
+    justify-content: space-between;
+    gap: 123px;
+}
+
+.email,
+.phone {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.email {
+    margin-bottom: 12px;
+}

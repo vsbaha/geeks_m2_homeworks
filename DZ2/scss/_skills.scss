@@ -1,0 +1,45 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (max-width: 1275px) {
+        max-width: 600px;
+    }
+    @media (max-width: 475px) {
+        width: 320px;
+    }
+}
+
+.skill-card {
+    @include flexCenter;
+    height: 180px;
+    width: 186px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: $border-radius-sm;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-card-bg);
+    transition: $transition-default;
+    
+    &:hover {
+        background-color: var(--color-card-hover-bg);
+        color: var(--color-card-hover-text);
+    }
+    
+    i {
+        font-size: 48px;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    @media (max-width: 475px) {
+        width: 150px;
+        height: 150px;
+    }
+}
